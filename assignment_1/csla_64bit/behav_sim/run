@@ -1,4 +1,0 @@
-#!/bin/sh
-
-vcs -full64 ../rtl/csla_64bit.v csla_64bit_tb.v +v2k -debug_all -top csla_64bit_tb \
-  -timescale=1ns/1ps

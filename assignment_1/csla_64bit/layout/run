@@ -1,3 +1,0 @@
-#!/bin/sh
-
-encounter -init scripts/top.tcl -win

@@ -1,0 +1,4 @@
+#!/bin/sh
+
+vcs -full64 ../rtl/fir_16tap.v fir_16tap_tb.v +v2k -debug_all -top fir_16tap_tb \
+  -timescale=1ns/1ps

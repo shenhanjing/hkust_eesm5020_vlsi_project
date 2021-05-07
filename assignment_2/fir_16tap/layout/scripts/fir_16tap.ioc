@@ -1,0 +1,88 @@
+################################################################################
+# Filename: fir_16tap.ioc
+# Author: SHEN Hanjing
+# Email: hshenag@connect.ust.hk
+# Affiliation: Hong Kong University of Science and Technology
+# ------------------------------------------------------------------------------
+#
+# This file defines the IO location constraint of the fir_16tap module. The input
+# pins are allocated at the left and right edge (on Metal 5). The output pins
+# are allocated at the top and bottom edge (on Metal 6). The space between each
+# pin is set as 1.5um. There is an offset of 1um to ensure the module pins do
+# not have any overlap with each other. Each pin dimension is set to be 0.14um x
+# 0.14um.
+#
+# Note: if we do not provide the IO location constraint for our divider module,
+# the Encounter will randomly place our pins.
+################################################################################
+
+(globals
+    version = 3
+    io_order = default
+    space = 3.0
+)
+(iopin
+    (top
+		
+    )
+    (left
+		(pin name="clk"	 layer=5 width=0.1400 depth=0.1400 offset=1.0)
+		(pin name="rst"	 layer=5 width=0.1400 depth=0.1400 )
+		(pin name="xin[0]"	 layer=5 width=0.1400 depth=0.1400 )
+		(pin name="xin[1]"	 layer=5 width=0.1400 depth=0.1400 )
+		(pin name="xin[2]"	 layer=5 width=0.1400 depth=0.1400 )
+		(pin name="xin[3]"	 layer=5 width=0.1400 depth=0.1400 )
+		(pin name="xin[4]"	 layer=5 width=0.1400 depth=0.1400 )
+		(pin name="xin[5]"	 layer=5 width=0.1400 depth=0.1400 )
+		(pin name="xin[6]"	 layer=5 width=0.1400 depth=0.1400 )
+		(pin name="xin[7]"	 layer=5 width=0.1400 depth=0.1400 )
+		(pin name="xin[8]"	 layer=5 width=0.1400 depth=0.1400 )
+		(pin name="xin[9]"	 layer=5 width=0.1400 depth=0.1400 )
+		(pin name="xin[10]"	 layer=5 width=0.1400 depth=0.1400 )
+		(pin name="xin[11]"	 layer=5 width=0.1400 depth=0.1400 )
+		(pin name="xin[12]"	 layer=5 width=0.1400 depth=0.1400 )
+		(pin name="xin[13]"	 layer=5 width=0.1400 depth=0.1400 )
+		(pin name="xin[14]"	 layer=5 width=0.1400 depth=0.1400 )
+		(pin name="xin[15]"	 layer=5 width=0.1400 depth=0.1400 )
+    )
+    (bottom
+		(pin name="yout[0]"	 layer=6 width=0.1400 depth=0.1400 offset=20.0)
+		(pin name="yout[1]"	 layer=6 width=0.1400 depth=0.1400 )
+		(pin name="yout[2]"	 layer=6 width=0.1400 depth=0.1400 )
+		(pin name="yout[3]"	 layer=6 width=0.1400 depth=0.1400 )
+		(pin name="yout[4]"	 layer=6 width=0.1400 depth=0.1400 )
+		(pin name="yout[5]"	 layer=6 width=0.1400 depth=0.1400 )
+		(pin name="yout[6]"	 layer=6 width=0.1400 depth=0.1400 )
+		(pin name="yout[7]"	 layer=6 width=0.1400 depth=0.1400 )
+		(pin name="yout[8]"	 layer=6 width=0.1400 depth=0.1400 )
+		(pin name="yout[9]"	 layer=6 width=0.1400 depth=0.1400 )
+		(pin name="yout[10]"	 layer=6 width=0.1400 depth=0.1400 )
+		(pin name="yout[11]"	 layer=6 width=0.1400 depth=0.1400 )
+		(pin name="yout[12]"	 layer=6 width=0.1400 depth=0.1400 )
+		(pin name="yout[13]"	 layer=6 width=0.1400 depth=0.1400 )
+		(pin name="yout[14]"	 layer=6 width=0.1400 depth=0.1400 )
+		(pin name="yout[15]"	 layer=6 width=0.1400 depth=0.1400 )
+		(pin name="yout[16]"	 layer=6 width=0.1400 depth=0.1400 )
+		(pin name="yout[17]"	 layer=6 width=0.1400 depth=0.1400 )
+    )
+    (right
+		(pin name="yout[18]"	 layer=6 width=0.1400 depth=0.1400 offset=1.0)
+		(pin name="yout[19]"	 layer=6 width=0.1400 depth=0.1400 )
+		(pin name="yout[20]"	 layer=6 width=0.1400 depth=0.1400 )
+		(pin name="yout[21]"	 layer=6 width=0.1400 depth=0.1400 )
+		(pin name="yout[22]"	 layer=6 width=0.1400 depth=0.1400 )
+		(pin name="yout[23]"	 layer=6 width=0.1400 depth=0.1400 )
+		(pin name="yout[24]"	 layer=6 width=0.1400 depth=0.1400 )
+		(pin name="yout[25]"	 layer=6 width=0.1400 depth=0.1400 )
+		(pin name="yout[26]"	 layer=6 width=0.1400 depth=0.1400 )
+		(pin name="yout[27]"	 layer=6 width=0.1400 depth=0.1400 )
+		(pin name="yout[28]"	 layer=6 width=0.1400 depth=0.1400 )
+		(pin name="yout[29]"	 layer=6 width=0.1400 depth=0.1400 )
+		(pin name="yout[30]"	 layer=6 width=0.1400 depth=0.1400 )
+		(pin name="yout[31]"	 layer=6 width=0.1400 depth=0.1400 )
+		(pin name="yout[32]"	 layer=6 width=0.1400 depth=0.1400 )
+		(pin name="yout[33]"	 layer=6 width=0.1400 depth=0.1400 )
+		(pin name="yout[34]"	 layer=6 width=0.1400 depth=0.1400 )
+		(pin name="yout[35]"	 layer=6 width=0.1400 depth=0.1400 )
+    )
+)

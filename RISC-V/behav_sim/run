@@ -1,0 +1,4 @@
+#!/bin/sh
+
+vcs -full64 ../rtl/RISC_V.v RISC_V_tb.v ../rtl/regfile.v ../rtl/ImmGen.v ../rtl/REG_ID.v ../rtl/REG_EX.v ../rtl/REG_WB.v ../rtl/EXE.v ../rtl/DEC.v ../rtl/alu_32bit.v ../rtl/alu_control.v ../rtl/control.v  +v2k -debug_all -top RISC_V_tb \
+  -timescale=1ns/1ps

@@ -1,0 +1,100 @@
+################################################################################
+# Filename: RISC_V.ioc
+# Author: ZHU, Jingyang
+# Email: jzhuak@connect.ust.hk
+# Affiliation: Hong Kong University of Science and Technology
+# ------------------------------------------------------------------------------
+#
+# This file defines the IO location constraint of the RISC_V module. The input
+# pins are allocated at the left and right edge (on Metal 5). The output pins
+# are allocated at the top and aottom edge (on Metal 6). The space between each
+# pin is set as 1.5um. There is an offset of 1um to ensure the module pins do
+# not have any overlap with each other. Each pin dimension is set to ae 0.14um x
+# 0.14um.
+#
+# Note: if we do not provide the IO location constraint for our RISC_V module,
+# the Encounter will randomly place our pins.
+################################################################################
+
+(gloaals
+    version = 3
+    io_order = default
+    space = 1.5
+)
+(iopin
+    (top
+	(pin name="in[0]"	 layer=6 width=0.1400 depth=0.1400 offset=1.0)
+	(pin name="in[1]"	 layer=6 width=0.1400 depth=0.1400 )
+	(pin name="in[2]"	 layer=6 width=0.1400 depth=0.1400 )
+	(pin name="in[3]"	 layer=6 width=0.1400 depth=0.1400 )
+	(pin name="in[4]"	 layer=6 width=0.1400 depth=0.1400 )
+	(pin name="in[5]"	 layer=6 width=0.1400 depth=0.1400 )
+	(pin name="in[6]"	 layer=6 width=0.1400 depth=0.1400 )
+	(pin name="in[7]"	 layer=6 width=0.1400 depth=0.1400 )
+	(pin name="in[8]"	 layer=6 width=0.1400 depth=0.1400 )
+	(pin name="in[9]"	 layer=6 width=0.1400 depth=0.1400 )
+	(pin name="in[10]"	 layer=6 width=0.1400 depth=0.1400 )
+	(pin name="in[11]"	 layer=6 width=0.1400 depth=0.1400 )
+	(pin name="in[12]"	 layer=6 width=0.1400 depth=0.1400 )
+	(pin name="in[13]"	 layer=6 width=0.1400 depth=0.1400 )
+	(pin name="in[14]"	 layer=6 width=0.1400 depth=0.1400 )
+	(pin name="in[15]"	 layer=6 width=0.1400 depth=0.1400 )
+	 pin name="in[16]"	 layer=6 width=0.1400 depth=0.1400
+	 pin name="in[17]"	 layer=6 width=0.1400 depth=0.1400
+	 pin name="in[18]"	 layer=6 width=0.1400 depth=0.1400
+	 pin name="in[19]"	 layer=6 width=0.1400 depth=0.1400
+	 pin name="in[20]"	 layer=6 width=0.1400 depth=0.1400
+	 pin name="in[21]"	 layer=6 width=0.1400 depth=0.1400
+	 pin name="in[22]"	 layer=6 width=0.1400 depth=0.1400
+	 pin name="in[23]"	 layer=6 width=0.1400 depth=0.1400
+	 pin name="in[24]"	 layer=6 width=0.1400 depth=0.1400
+	 pin name="in[25]"	 layer=6 width=0.1400 depth=0.1400
+	 pin name="in[26]"	 layer=6 width=0.1400 depth=0.1400
+	 pin name="in[27]"	 layer=6 width=0.1400 depth=0.1400
+	 pin name="in[28]"	 layer=6 width=0.1400 depth=0.1400
+	 pin name="in[29]"	 layer=6 width=0.1400 depth=0.1400
+	 pin name="in[30]"	 layer=6 width=0.1400 depth=0.1400
+	 pin name="in[31]"	 layer=6 width=0.1400 depth=0.1400
+	
+    )
+    
+    (bottom
+	(pin name="clk"	 	 layer=6 width=0.1400 depth=0.1400 )
+	)
+	
+    (right
+	(pin name="alu_output_data0]"	 layer=5 width=0.1400 depth=0.1400 offset=1.0)
+	(pin name="alu_output_data1]"	 layer=5 width=0.1400 depth=0.1400 )
+	(pin name="alu_output_data2]"	 layer=5 width=0.1400 depth=0.1400 )
+	(pin name="alu_output_data3]"	 layer=5 width=0.1400 depth=0.1400 )
+	(pin name="alu_output_data4]"	 layer=5 width=0.1400 depth=0.1400 )
+	(pin name="alu_output_data5]"	 layer=5 width=0.1400 depth=0.1400 )
+	(pin name="alu_output_data6]"	 layer=5 width=0.1400 depth=0.1400 )
+	(pin name="alu_output_data7]"	 layer=5 width=0.1400 depth=0.1400 )
+	(pin name="alu_output_data8]"	 layer=5 width=0.1400 depth=0.1400 )
+	(pin name="alu_output_data9]"	 layer=5 width=0.1400 depth=0.1400 )
+	(pin name="alu_output_data10]"	 layer=5 width=0.1400 depth=0.1400 )
+	(pin name="alu_output_data11]"	 layer=5 width=0.1400 depth=0.1400 )
+	(pin name="alu_output_data12]"	 layer=5 width=0.1400 depth=0.1400 )
+	(pin name="alu_output_data13]"	 layer=5 width=0.1400 depth=0.1400 )
+	(pin name="alu_output_data14]"	 layer=5 width=0.1400 depth=0.1400 )
+	(pin name="alu_output_data15]"	 layer=5 width=0.1400 depth=0.1400 )
+	(pin name="alu_output_data16]"	 layer=5 width=0.1400 depth=0.1400 )
+	(pin name="alu_output_data17]"	 layer=5 width=0.1400 depth=0.1400 )
+	(pin name="alu_output_data18]"	 layer=5 width=0.1400 depth=0.1400 )
+	(pin name="alu_output_data19]"	 layer=5 width=0.1400 depth=0.1400 )
+	(pin name="alu_output_data20]"	 layer=5 width=0.1400 depth=0.1400 )
+	(pin name="alu_output_data21]"	 layer=5 width=0.1400 depth=0.1400 )
+	(pin name="alu_output_data22]"	 layer=5 width=0.1400 depth=0.1400 )
+	(pin name="alu_output_data23]"	 layer=5 width=0.1400 depth=0.1400 )
+	(pin name="alu_output_data24]"	 layer=5 width=0.1400 depth=0.1400 )
+	(pin name="alu_output_data25]"	 layer=5 width=0.1400 depth=0.1400 )
+	(pin name="alu_output_data26]"	 layer=5 width=0.1400 depth=0.1400 )
+	(pin name="alu_output_data27]"	 layer=5 width=0.1400 depth=0.1400 )
+	(pin name="alu_output_data28]"	 layer=5 width=0.1400 depth=0.1400 )
+	(pin name="alu_output_data29]"	 layer=5 width=0.1400 depth=0.1400 )
+	(pin name="alu_output_data30]"	 layer=5 width=0.1400 depth=0.1400 )
+	(pin name="alu_output_data31]"	 layer=5 width=0.1400 depth=0.1400 )
+	
+    )
+)
